@@ -1,6 +1,6 @@
 # Local LLM with Nix Flakes
 
-Optimized for **AMD RX 6800XT / Ryzen 7900X** with 32GB RAM.
+Optimized for **AMD RX 9060 XT (16GB VRAM)** with **16GB system RAM**.
 
 ![image](./image.png)
 
@@ -100,9 +100,9 @@ nix run nixpkgs#python313Packages.huggingface-hub -- download \
 
 ---
 
-## Hardware Optimizations (AMD GPU)
+## Hardware Optimizations (AMD GPU, 16GB VRAM + 16GB RAM)
 
-To maximize performance on **AMD RDNA2** hardware, these configurations are applied via `llama-common.sh`:
+To maximize performance on AMD hardware with tighter memory budgets, these configurations are applied via `env-setup.sh` and `models.ini`:
 
 ### Environment Variables
 #### ROCM
