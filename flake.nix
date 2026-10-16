@@ -1,5 +1,5 @@
 {
-  description = "6800 xt Optimized llama.cpp";
+  description = "RX 9060 XT 16GB / 16GB RAM optimized llama.cpp";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
